@@ -1,0 +1,20 @@
+<div class="container main-container">
+    <div class="row text-center">
+        <div *ngFor="let computer of computers" class="col-md-3" style="padding-bottom: 30px;">
+            <div class="card h-100">
+                <h4 class="card-title">{{ computer.Name }}</h4>
+
+                <div class="card-body">
+                    <p>IP: {{computer.Ip}}</p>
+                    <p>Sistema: {{computer.System}}</p>
+                    <p>Versão: {{computer.SystemVersion}}</p>
+                    <p>Usuário: {{computer.ManagerUser}}</p>
+                    <p>Departamento: {{computer.DepartmentInstalled}}</p>
+                </div>
+                <div class="card-footer">
+                    <p>Data de criação: {{computer.CreationDate}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

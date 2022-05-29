@@ -1,0 +1,13 @@
+import { Routes } from "@angular/router";
+import { ContatoComponent } from "./institucional/contato/contato.component";
+import { SobreComponent } from "./institucional/sobre/sobre.component";
+import { HomeComponent } from "./navegacao/home/home.component";
+import { ListaComputerComponent } from "./produtos/lista-produto/lista-computer.component";
+
+export const rootRouterConfig: Routes = [
+    { path: '', redirectTo: '/computadores', pathMatch: 'full' },
+    { path: 'home', component: HomeComponent },
+    { path: 'contato', component: ContatoComponent },
+    { path: 'sobre', component: SobreComponent },
+    { path: 'computadores', component: ListaComputerComponent }
+];
