@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  url: "https://computerdata-backend-t.azurewebsites.net/"
+  url: "https://curso-fullstack-backtest.azurewebsites.net/"
 };
